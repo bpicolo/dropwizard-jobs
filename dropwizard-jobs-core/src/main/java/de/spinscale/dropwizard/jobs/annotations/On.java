@@ -8,6 +8,7 @@ import org.quartz.Trigger;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
+@Inherited
 public @interface On {
 
     enum MisfirePolicy {

@@ -8,12 +8,13 @@ import java.lang.annotation.Target;
 /**
  * Delay the start of a job which has the {@link Every @Every} annotation. Without a delay the job will
  * start immediately.
- * 
+ *
  * @author Martin Charlesworth
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
+@Inherited
 public @interface DelayStart {
     String value();
 }
